@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+D:\java文档\2020\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1300256666.index
+\course\src
+D:\java文档\2020\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4171132307.index
+\Test01\src
+D:\java文档\2020\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\503550625.index
+\Test01\Test01\src
+D:\java文档\2020\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4031709985.index
+\course\src
+D:\java文档\2020\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\30193266.index
+\course\src
+D:\java文档\2020\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4293581084.index
+\course\src

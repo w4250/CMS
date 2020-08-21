@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.kunming.bean.User"/>
+<fullyQualifiedTypeName name="com.mchange.v2.c3p0.ComboPooledDataSource"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="com.kunming.dao.TeacherDao"/>
+<fullyQualifiedTypeName name="com.kunming.daoImpl.TeacherDaoImpl"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="com.kunming.service.TeacherService"/>
+<fullyQualifiedTypeName name="com.kunming.serviceImpl.TeacherServiceImpl"/>
+<fullyQualifiedTypeName name="com.kunming.bean.Teacher"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.BeanListHandler"/>
+<fullyQualifiedTypeName name="com.kunming.dao.CourseDao"/>
+<fullyQualifiedTypeName name="com.kunming.daoImpl.CourseDaoImpl"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.kunming.jdbc.JdbcUtils"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.QueryRunner"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.MapListHandler"/>
+<fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
+<fullyQualifiedTypeName name="com.kunming.dao.StudentDao"/>
+<fullyQualifiedTypeName name="com.kunming.bean.Course"/>
+<fullyQualifiedTypeName name="com.kunming.daoImpl.SCDaoImpl"/>
+<fullyQualifiedTypeName name="com.kunming.dao.SCDao"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.kunming.service.CourseService"/>
+<fullyQualifiedTypeName name="com.kunming.serviceImpl.CourseServiceImpl"/>
+<fullyQualifiedTypeName name="com.kunming.serviceImpl.StudentServiceImpl"/>
+<fullyQualifiedTypeName name="com.kunming.service.StudentService"/>
+<fullyQualifiedTypeName name="org.apache.commons.dbutils.handlers.BeanHandler"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.kunming.daoImpl.StudentDaoImpl"/>
+<fullyQualifiedTypeName name="com.kunming.bean.SC"/>
+<fullyQualifiedTypeName name="com.kunming.bean.Student"/>
+<fullyQualifiedTypeName name="com.kunming.service.SCService"/>
+<fullyQualifiedTypeName name="com.kunming.serviceImpl.SCServiceImpl"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+</qualifiedTypeNameHistroy>

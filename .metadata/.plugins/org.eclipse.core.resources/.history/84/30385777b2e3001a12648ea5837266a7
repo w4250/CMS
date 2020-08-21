@@ -1,0 +1,79 @@
+package com.kunming.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.kunming.bean.Student;
+import com.kunming.bean.Teacher;
+import com.kunming.service.StudentService;
+import com.kunming.service.TeacherService;
+import com.kunming.serviceImpl.StudentServiceImpl;
+import com.kunming.serviceImpl.TeacherServiceImpl;
+
+@WebServlet("/LoginServlet")
+public class LoginServlet extends HttpServlet {
+	private static final long serialversionUID = 1L;
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		this.doPost(request, response);
+	}
+	protected void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException {
+		//1.解决乱码
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html;charset=UTF-8");
+		PrintWriter out = response.getWriter();
+		//2.获取前台数据
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		//3.类型：你选择的是教师登录还是学生登录
+		String type = request.getParameter("type");
+		//4.调用service方法
+		TeacherService teacherService = new TeacherServiceImpl();
+		Teacher teacher = new Teacher();
+		teacher.setTname(username);
+		teacher.setTpassword(password);
+		Student s = new Student();
+		
+		StudentService studentService = new StudentServiceImpl();
+		//获取到session
+		HttpSession session = request.getSession();
+		//判断是老师还是学生
+		if(type.equals("tea")) {
+			//调用service方法，获取到teacher对象
+			teacher = teacherService.getTeacher(teacher);
+			if(teacher != null) {
+				//证明我们查询到的这个老师，把这个对象存储在session中，在网站哪一个页面都可以显示teacher的信息
+				session.setAttribute("teacher", teacher);
+				response.sendRedirect("tea/teacher.jsp");//重定向回到首页
+			}else {
+				//对不起没有这个人
+				out.print("alert(\"对不起没有这个人\")");
+				
+				response.setHeader("refresh", "3;url=tea/teaLogin.jsp");
+				
+			}
+		}else if(type.equals("stu")) {
+			s.setSno(Integer.parseInt(username));
+			s.setSpassword(password);
+			//调用service方法，获取学生对象
+			s=studentService.getStuBySnoPassWord(s);
+			
+			
+			if(s != null) {
+				session.setAttribute("student", s);
+				response.sendRedirect("student/student.jsp");
+			}else {
+				//查无此人
+				out.print("<span style='color:red;font-size:15px;text-aglin:center;'>用户名或者密码不正确</span>");
+				
+				response.setHeader("refresh", "3;url=Login.jsp");
+
+			}
+		}	
+	}
+}
